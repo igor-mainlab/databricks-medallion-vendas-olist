@@ -35,6 +35,8 @@ CSVs (Volume) → Bronze (6 tabelas) → Silver (5 tabelas) → Gold (4 tabelas)
 
 **Resultados conferidos por reconciliação** (controle direto vs. cada Gold)
 
+![Grafo](docs/img/grafo.png)
+
 | Métrica | Valor |
 |---|---|
 | Pedidos entregues | 96.478 |
@@ -44,6 +46,8 @@ CSVs (Volume) → Bronze (6 tabelas) → Silver (5 tabelas) → Gold (4 tabelas)
 | Pedidos entregues com atraso | 6.534 de 96.470 (6,77%) |
 
 Os 96.470 excluem 8 pedidos marcados como `delivered` sem data de entrega, uma inconsistência real do dado, medida por uma expectation.
+
+![Dashboard](docs/img/dashboard-olist.png)
 
 **Armadilhas tratadas**
 - Um pedido tem vários itens e pagamentos: manter uma tabela por grão evita inflar a receita em joins.
